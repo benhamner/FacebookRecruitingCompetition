@@ -1,6 +1,0 @@
-This folder contains code for three benchmarks:
-
--rf_benchmark.py (Random Forest Benchmark)
--svm_benchmark.py (Support Vector Machine Benchmark)
--uniform_benchmark.py
-
