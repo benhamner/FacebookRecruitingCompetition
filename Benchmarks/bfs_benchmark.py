@@ -19,6 +19,7 @@ def breadth_first_search(graph, node, num_nodes):
         if next_node not in neighbors:
             visited.append(next_node)
         queue.extend(n for n in graph[next_node] if n not in looked_at)
+        looked_at.update(graph[next_node])
 
     return visited
 
@@ -37,5 +38,5 @@ def bfs_benchmark(train_file, test_file, submission_file, num_predictions):
 if __name__=="__main__":
     bfs_benchmark("../Data/train.csv",
                   "../Data/test.csv",
-                  "../Submissions/bfs_benchmark.csv",
+                  "../Submissions/bfs_benchmark_updated.csv",
                   10)
